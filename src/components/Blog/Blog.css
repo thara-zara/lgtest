@@ -1,0 +1,73 @@
+.shop .blog-three{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+}
+.blog-card{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 450px;
+    width: auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.blog-card .card-top{
+    height:100%;
+    overflow: hidden;
+}
+.blog-card .card-top img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.blog-card .card-btm{
+    height: 100%;
+    background: black;
+    color: #fff;
+    text-align: left;
+    border-radius:  0 0 10px 10px;
+}
+.blog-card .card-btm .blog-body{
+    margin: 25px 25px 25px 25px;
+}
+.blog-card .card-btm .blog-body h5{
+    font-size: 22px;
+    font-weight: normal;
+    font-family: 'Raleway', sans-serif;
+}
+.blog-card .card-btm .blog-body p{
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 10px;
+}
+.blog-card .card-btm .blog-body h6{
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 10px;
+    color: rgb(255, 217, 0);
+    cursor: pointer;
+    font-weight: lighter;
+}
+@media screen and (max-width:850px){
+    .shop .blog-three{
+        grid-template-columns: 1fr;
+    }
+    .blog-card{
+        height: 550px;
+    }
+    .blog-card .card-btm .blog-body h5{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:540px){
+    .shop .blog-three{
+        grid-template-columns: 1fr;
+    }
+    .blog-card{
+        height: 450px;
+    }
+    .blog-card .card-btm .blog-body h5{
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,314 @@
+.cart{
+    margin: 100px 50px 0px 50px;
+}
+
+.cart-hero{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap: 100px;
+}
+
+.cart-hero .cart-left img{
+    width: 350px;
+}
+
+.cart-hero .cart-right{
+    width: 50%;
+}
+.cart-right h3{
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: 'Lora', serif;
+}
+.cart-right h4{
+    margin-top: 25px;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(45, 45, 45);
+}
+.cart-right p{
+    width:75%;
+    font-size: 16px;
+    color: rgb(113, 113, 113);
+    font-family: 'Raleway', sans-serif;
+    line-height: 25px;
+}
+.select{
+    display: flex;
+    flex-direction: column;
+}
+.select label{
+    font-size: 16px;
+    margin-top: 25px;
+    color: rgb(0, 0, 0);
+    text-transform: capitalize;
+    font-family: 'Raleway', sans-serif;
+    line-height: 25px;
+}
+.select select{
+    font-size: 16px;
+    color: rgb(67, 67, 67);
+    text-transform: capitalize;
+    font-family: 'Raleway', sans-serif;
+    line-height: 25px;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.select select option{
+    background: #fff;
+    border-radius: 10px;
+}
+.color-btn{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+.color-btn .c-name{
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    text-transform: capitalize;
+    font-family: 'Raleway', sans-serif;
+}
+.colors{
+    display: flex;
+    gap: 10px;
+}
+.colors :nth-child(1){
+    width: 25px;
+    height: 25px;
+    background: gray;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.colors :nth-child(2){
+    width: 25px;
+    height: 25px;
+    background: rgb(105, 27, 27);
+    border-radius: 50px;
+    cursor: pointer;
+}
+.colors :nth-child(3){
+    width: 25px;
+    height: 25px;
+    background: rgb(255, 255, 255);
+    border-radius: 50px;
+    cursor: pointer;
+}
+.colors :nth-child(4){
+    width: 25px;
+    height: 25px;
+    background: rgb(14, 35, 89);
+    border-radius: 50px;
+    cursor: pointer;
+}
+.qty{
+    margin-top: 25px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.qty input{
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(0, 0, 0);
+    outline: none;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+.qty button{
+    background: #000;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+    border-radius: 10px;
+    color: #fff;
+    padding: 10px 20px 10px 20px;
+    text-transform: capitalize;
+}
+
+.item-des{
+    margin-top: 50px;
+}
+.item-des .des-btn button{
+    background: rgb(191, 165, 18);
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px 10px 20px;
+    text-transform: capitalize;
+    border: none;
+}
+.add-info{
+    margin-top: 25px;
+    font-size:35px;
+    font-family: 'Lora', serif;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.review{
+    margin-top: 25px;
+    color: rgb(57, 57, 57);
+    font-size:35px;
+    font-family: 'Lora', serif;
+    text-transform: capitalize;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.review div{
+    width: 25px;
+    height: 25px;
+    background:rgb(186, 186, 186);
+    margin-left: 25px;
+    border-radius: 50px;
+}
+.item-des h6{
+    margin-top: 25px;
+    font-size: 16px;
+    color: rgb(57, 57, 57);
+    text-transform: capitalize;
+    font-family: 'Raleway', sans-serif;
+    width: 75%;
+    line-height: 25px;
+}
+
+.related{
+    margin-top: 50px;
+    text-align: center;
+}
+.related h1{
+    font-size: 50px;
+    text-transform: capitalize;
+}
+.items{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+}
+
+.shop-card{
+    width: auto;
+    height: 500px;
+    position: relative;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.shop-card:hover .shop-overlay{
+    opacity: 1;
+    transition: 0.5s ease-in;
+}
+
+.shop-overlay{
+    position: absolute;
+    bottom: 0;
+    background: rgb(255, 212, 55);
+    width: 100%;
+    height: 50%;
+    border-radius:0px 0px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 0;
+    opacity: 0;
+}
+.shop-overlay h5{
+    font-size: 25px;
+    font-weight: normal;
+    text-transform: capitalize;
+    font-family: 'Lora', serif;
+    margin-bottom: 10px;
+}
+.shop-overlay h6{
+    font-size: 20px;
+    font-weight: normal;
+    text-transform: capitalize;
+    font-family: 'Lora', serif;
+    margin-bottom: 10px;
+}
+.shop-overlay span{
+    width:50px;
+    height: 50px;
+    cursor: pointer;
+}
+.shop-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius:10px;
+}
+.shop-four{
+    margin-top: 50px;
+}
+@media screen and (max-width:800px){
+    .cart-hero{
+        display: flex;
+        flex-direction: column;
+    }
+    .cart-right p{
+        width: 100%;
+    }
+    .items{
+        margin-top: 50px;
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       /* border: 1px solid red; */
+    }
+    .shop-card{
+        width: 75%;
+    }
+}
+@media screen and (max-width:540px) {
+    .cart{
+        margin: 100px 25px 0px 25px;
+    }
+    .cart-hero{
+        display: flex;
+        flex-direction: column;
+    }
+    .cart-hero .cart-left img{
+        width: 300px;
+    }
+    .cart-hero .cart-right{
+        width: 100%;
+    }
+    .cart-right h3{
+        font-size: 35px;
+    }
+    .cart-right h4{
+        margin-top: 25px;
+        font-size: 35px;
+    }
+    .cart-right p{
+        width:100%;
+    }
+    .item-des .des-btn button{
+        font-size: 16px;
+    }
+    .related h1{
+        font-size: 35px;
+    }
+    .item-des h6{
+        width: 100%;
+    }
+    .items{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 25px;
+    }
+}

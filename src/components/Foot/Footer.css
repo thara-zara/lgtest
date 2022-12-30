@@ -1,0 +1,56 @@
+.foot{
+    height: auto;
+    width: 100%;
+    margin-top: 100px;
+    text-align: center;
+    background: #000;
+    position: relative;
+    overflow: hidden;
+}
+.foot .f-logo img{
+    margin-top: 50px;
+}
+.foot h5{
+    color: #ffff;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 50px;
+    z-index: 10000;
+}
+.foot :nth-child(2){
+    color: rgb(255, 217, 0);
+}
+.foot .footers{
+    position: absolute;
+    width: 300px;
+    bottom:0;
+    left: 0;
+    z-index: 10;
+}
+.foot .footers img{
+    width: 100%;
+   
+}
+.f-logo img{
+    width: 75px;
+    margin-bottom: 25px;
+}
+@media screen and (max-width:850px){
+    .foot .footers{
+        position: absolute;
+        width:175px;
+        bottom:0;
+        left: 0;
+        z-index: 10;
+    }  
+}
+@media screen and (max-width:540px){
+    .foot .footers{
+        position: absolute;
+        width: 100px;
+        bottom:0;
+        left: 0;
+        z-index: 10;
+    }  
+}

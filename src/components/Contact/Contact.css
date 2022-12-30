@@ -1,0 +1,91 @@
+.con{
+    margin-top: 100px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    position: relative;
+}
+.con-left h5{
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: 'Lora', serif;
+}
+.con-left h1{
+    font-size: 75px;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: 'PT Serif', serif;
+    color: rgb(206, 167, 24);
+}
+.con-left button{
+    padding: 10px 20px 10px 20px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    background: #000;
+    color: #fff;
+    font-weight: lighter;
+    text-transform: capitalize;
+    z-index: 100;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+}
+.con-right img{
+    height:650px;
+}
+.con .contact{
+    position: absolute;
+    left: 0;
+    width: 175px;
+}
+@media screen and (max-width:850px){
+    .con{
+        gap: 25px;
+       
+        align-items:center;
+    }
+    .con-left h5{
+        font-size:22px;
+    }
+    .con-left h1{
+        font-size: 35px;
+    }
+    .con-right img{
+        height:450px;
+    }
+    .con .contact{
+        left: -50px;
+        width: 50px;
+    }
+    .con .contact{
+        position: absolute;
+        left: 0;
+        width: 150px;
+    }
+}
+@media screen and (max-width:540px){
+    .con{
+        gap: 0px;
+        flex-direction: column-reverse;
+        align-items:center;
+    }
+    .con-left h5{
+        font-size:22px;
+    }
+    .con-left h1{
+        font-size: 35px;
+    }
+    .con-right img{
+        height:450px;
+    }
+    .con .contact{
+        left: -50px;
+        width: 50px;
+    }
+
+}
